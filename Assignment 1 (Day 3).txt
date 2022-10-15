@@ -1,0 +1,25 @@
+#Try using np.sort() and np.where() with 3D array using NumPy
+
+#sorting
+
+import numpy as np
+arr3 = np.array([[[4,0,1],[8,3,9]],[[9,2,5],[7,1,4]]])
+m = np.sort(arr3)
+print(m)
+----------------------------------------------------------------------------------
+#searching
+
+a=np.where(arr3 == 5)
+b=np.where(arr3 == 1)
+
+Output:
+
+array([[[0, 1, 4],
+        [3, 8, 9]],
+
+       [[2, 5, 9],
+        [1, 4, 7]]])
+
+(array([1]), array([0]), array([2]))
+
+(array([0, 1]), array([0, 1]), array([2, 1]))
